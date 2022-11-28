@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;  
+  background-image: url("wall.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+h1{
+  color:black;
+  font-size: 60px;
+  font-family: "Georgia", serif
+}
+h1{
+  text-align:justify;
+  text-align-last: left;
+  margin: 0px;
+  margin-left:100px; 
+  margin-top:230px;
+}
+
+h2 {
+	color: #800000;
+  font-size: 15px;
+  font-family: "Georgia", serif
+}
+h2 {
+	text-align: justify;
+	text-align-last: left;
+	margin: 0px;
+	margin-left:100px;
+}
+
+h3{
+  color: #800000;
+  font-size: 15px;
+  font-family: "Georgia", serif
+}
+h3{
+  text-align: justify;
+  text-align-last: left;
+  margin: 0px;
+  margin-left:100px;
+}
+
+img {
+	width: 500px;
+	height:500px; 
+	float: right;
+  margin-right: 100px;
+  margin-top:120px;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #800000;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #800000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}

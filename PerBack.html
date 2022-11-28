@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Personal Background </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="PerBack.html" class="active">Background</a>
+  <a href="Hobbies.html">Hobbies and Likes</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+<div class="picture">
+  <img src = "bgone.jpg" width="300px" height="300px">
+</div>
+
+<body>
+  <div class="container">
+    <h1><span class = "auto-type"></span></h1>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["I am", "Kristyl Alegre", "20 years old"], 
+      typeSpeed:80,
+      backSpeed:80,
+      loop: true
+    })
+  </script>
+
+  <h2>ABOUT ME</h2>
+  <p>I am a 3rd Year college student in Bachelor of Science in Information Technology Major in Network Technology in Batangas State University. I live in the Philippines in the province of Batangas. My mother is Leny Alegre and my father is Alex Alegre. I have one brother, Allen Alegre, who is older than me. He already finished College and is now a degree holder. Currently he is working.</p>
+
+  <h6>Family and Friends</h6>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="fone.jpg" style="width:100%;height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ftwo.jpeg" style="width:100%;height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="fthree.jpeg" style="width:100%;height:80%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ffour.jpeg" style="width:100%;height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ffive.jpg" style="width:100%;height:70%;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+  <h3>EDUCATIONAL BACKGROUND</h3>
+  <div class="nestlist">
+    <ul>
+      <li>Elementary School</li>
+        <ul>
+          <li>Benigna Dimatatac Memorial Elementary School</li>
+        </ul>
+      <li>High School</li>
+        <ul>
+          <li>St. Anthony Montessori</li>
+        </ul>
+      <li>Senior High School</li>
+        <ul>
+          <li>University of Batangas</li>
+        </ul>
+    </ul>
+  </div>
+
+  <h4>Languages</h4>
+  <p>I can speak two languages, which is, Filipino and English.</p>
+
+  <h5>Programming Languages</h5>
+  <p>As an IT student it is necessary to know programming languages. Here are some of the programming languages that I know:</p>
+  <div class="row">
+  <div class="column">
+    <img src="java.png" alt="Java" width="100" height="100">
+  </div>
+  <div class="column">
+    <img src="cplus.png" alt="C++" width="100" height="100">
+  </div>
+  <div class="column">
+    <img src="python.png" alt="Python" width="100" height="100">
+  </div>
+  <div class="column">
+    <img src="html.png" alt="HTML" width="100" height="100">
+  </div>
+  <div class="column">
+    <img src="css.png" alt="CSS" width="80" height="100">
+  </div>
+  <div class="column">
+    <img src="js.png" alt="Javascript" width="150" height="100">
+  </div>
+</div>
+
+
+
+<script>
+var slideIndex = [1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+<footer>
+  
+</footer>
+
+</html>

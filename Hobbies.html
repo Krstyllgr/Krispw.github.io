@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Hobbies & Likes </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "styless.css">
+</head>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="PerBack.html">Background</a>
+  <a href="Hobbies.html" class="active">Hobbies and Likes</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<p>Photography</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="pone.jpg" style="width:100%;height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ptwo.jpg" style="width:100%;height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="pthree.jpg" style="width:100%;height:80%;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+</div>
+
+<p>Guitar</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="gone.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="gtwo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="gthree.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<p>Cats</p>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="cone.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="ctwo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="cthree.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<p>Kdrama</p>
+<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="kone.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="ktwo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="kthree.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+</div>
+
+<p>Anime</p>
+<div class="slideshow-container">
+  <div class="mySlides5">
+    <img src="aone.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides5">
+    <img src="atwo.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides5">
+    <img src="athree.jpeg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<footer>
+
+</footer>
+</html>
